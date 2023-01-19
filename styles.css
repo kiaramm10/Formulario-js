@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+//cuantico
 
 body{
     margin:0 auto;
+}
+.nav-link{
+    color: #FFF4E2;
+}
+.banner{
+    width: 375px;
 }
 .subtittle{
     margin-top: 10mm;
@@ -12,13 +19,39 @@ body{
 .contact-form{
     margin-left: 5mm;
     font-family: 'Poppins', sans-serif;
+    padding: 10px;
     
 }
 .form-control{
    background-color: #FFF4E2;
    border-color: blue;
 }
-.send{
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario__input-error-activo{
+    display: block ;
+}
+.formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    margin-top: 20px;
+    background: #f66860;
+    padding: 0.15px;
+    border-radius: 3px;
+    display: none;
+}
+.formulario__mensaje-active{
+    display: block;
+}
+.formulario__mensaje p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.formulario__btn{
     margin-top: 10mm;
     margin-left: 30mm;
     margin-bottom: 10mm;
@@ -27,17 +60,42 @@ body{
     border-radius: 13px;
     background-color: #42457A;
     border-color: #FFF4E2;
+    color: white;
 }
-.form-check{
-    margin-top: 5mm;
+.formulario__mensaje-exito{
+    font-size: 14px;
+    color: green;
+    display: none;
 }
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
 .form-select{
     background-color: #FFF4E2;
-    border-color: #42457A;
-    width: 355px;
+    border-color: blue;
+    width: 340px;
     height: 44px;
-    margin-left: 3mm;
 }
+
+/* estilos para la validación */
+.form__group-correcto .form-control{
+    border-color: green ;
+}
+.form__group-correcto .form-label{
+    color: green;
+}
+.form__group-incorrecto .form-control{
+    border-color: red;
+}
+.form__group-incorrecto .form-label{
+    color: red;
+}
+
+
+/* Mediaqueries*/
+
+
 @media screen and (min-width:768px){
     .form-check{
         margin-left: 20mm;
@@ -48,10 +106,38 @@ body{
     }
     .banner{
         width: 768px;
+       
 
     }
     .contact-form{
         margin-right: 10mm;
     }
-    
+    .form-select{
+        background-color: #FFF4E2;
+        border-color: blue;
+        width: 690px;
+        height: 44px;
+        
+    }
+    .formulario__btn{
+        margin-left: 80mm;
+    }
+    .form__checkbox{
+        margin-top: 5mm;
+        margin-left: 5mm;
+    }
+}
+@media screen and (min-width:1300px){
+    .contact-form{
+        padding: 40px;
+        
+    }
+    .banner{
+        width: 100%;
+    }
+    .form-select{
+        width: 1210px;
+        height: 44px;
+        
+    }
 }

@@ -42,26 +42,24 @@
         </div>
             
           </div>
-        </div>
-      </div>
     </nav>
     
  </header>
     <main>
-        <img class="banner" src="../Formulario-js/imagenes/bannernuevo.svg" alt="banner con la frase contacto">
+        <img class="banner" src="../Formulario-js/imagenes/banner3.svg" alt="banner con la frase contacto">
         <p class="subtittle">Contacta con nosotros de forma inmediata rellenando este formulario!!</p>
           
                 <form class="contact-form" id="formulario">
                 <div class="row">
                     <div class="col form__group" id="grupo__nombre">
-                      <label class="form-label" for="name">Nombre:</label>
+                      <label class="form-label">Nombre:</label>
                       <input type="text" class="form-control" name="nombre">
                       <i class=" fa-regular fa-badge-check"></i>
                       <p class="formulario__input-error">Solo debe contener letras y espacios, pueden llevar acentos. </p>
                     </div>
                     
                     <div class="col form__group" id="grupo__apellido">
-                        <label class="form-label" for="name">Apellido:</label>
+                        <label class="form-label">Apellido:</label>
                       <input type="text" class="form-control"  name="apellido">
                       <p class="formulario__input-error">Solo debe contener letras y espacios, pueden llevar acentos. </p>
                     </div>
@@ -72,17 +70,17 @@
                     <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
                   </div>
                   <div class="mb-3 form__group" id="grupo__phone">
-                    <label for="formGroupExampleInput" class="form-label">Teléfono:</label>
+                    <label class="form-label">Teléfono:</label>
                     <input type="number" class="form-control" name="phone">
                     <p class="formulario__input-error">El telefono solo puede contener numero y el maximo es de 14 numeros </p>
                   </div>
                   <div class="col-sm form__group" id="grupo__city">
-                    <label for="name" class="col-sm-2 col-form-label form-label">Ciudad:</label>
+                    <label class="col-sm-2 col-form-label form-label">Ciudad:</label>
                     <input type="text" class="form-control" placeholder="Ejem:Madrid" name="city">
                     <p class="formulario__input-error">Campo obligatorio</p>
                   </div>
                   <div class="col-sm form__group" id="grupo__codeP">
-                    <label for="number" class="col-sm-2 col-form-label form-label">CódigoPostal:</label>
+                    <label class="col-sm-2 col-form-label form-label">CódigoPostal:</label>
                     <input type="text" class="form-control" placeholder="Código postal" name="codeP">
                     <p class="formulario__input-error">Campo obligatorio</p>
                   </div>
@@ -97,7 +95,7 @@
                     <option value="3">Colocación</option>
                   </select>
                   <div class="col form__group" id="grupo__asunto">
-                    <label class="form-label" for="name">Asunto:</label>
+                    <label class="form-label">Asunto:</label>
                     <input type="text" class="form-control" name="asunto">
                     <p class="formulario__input-error">Es obligatorio colocar un asunto</p>
                   </div>
@@ -109,6 +107,9 @@
                     <label class="form-label" >
                       <input class="form__checkbox" type="checkbox" name="terminos" id="terminos">
                       Estoy de acuerdo con la Política de Privacidad</label>
+                      <p class="rgd">Información sobre el tratamiento de sus datos personales de acuerdo con lo establecido en el Reglamento General (UE) 2016/679, de protección de datos (RGPD) y la Ley Orgánica 3/2018, de protección de datos y garantía de los derechos digitales (LOPDGDD) Responsable: GRUPO GIE Finalidad: Responder a sus consultas y solicitudes. Legitimación : Consentimiento de la persona interesada o por interés legítimo. Derechos: Tiene derecho a acceder, rectificar, oponerse y suprimir sus datos, así como a la limitación y portabilidad de sus datos, dirigiendo comunicación, motivada y acreditada, a nuestro Delegado de Protección de Datos en lopd@gie.es Información adicional: Puede consultar esta información más detallada y otra información adicional en nuestra política de privacidad: www.gie.es
+
+                        Utilizamos Mailchimp para ponernos en contacto contigo. Haciendo clic aceptas que tus datos se utilicen a través de esta plataforma.Puedes saber más aquí.</p>
                   </div>
                   <div class="form__group" id="grupo__correo">
                     <label class="form-label" >
@@ -116,14 +117,9 @@
                       Consiento el envío de comunicaciones comerciales personalizadas
                     </label>
                   </div>
-                  
-                  <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                  </div>
             
                   <div class="form__group form__group-btn-enviar">
                     <button type="submit" class="formulario__btn">Enviar</button>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                   </div>
                 </form>
           

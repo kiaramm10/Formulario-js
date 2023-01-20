@@ -4,13 +4,14 @@
 
 body{
     margin:0 auto;
-    background-image:image(Formulario-js\imagenes\Vectary texture.svg);
+    
 }
 .nav-link{
     color: #FFF4E2;
 }
 .banner{
     width: 375px;
+    
 }
 .subtittle{
     margin-top: 10mm;
@@ -25,8 +26,8 @@ body{
     
 }
 .form-control{
-   background-color: #FFF4E2;
-   border-color: blue;
+   background-color: #F4F9FF;
+   border-color: #42457A;
 }
 .formulario__input-error{
     font-size: 12px;
@@ -61,7 +62,7 @@ body{
     height: 36px;
     border-radius: 13px;
     background-color: #42457A;
-    border-color: #FFF4E2;
+    border-color: #F4F9FF;
     color: white;
 }
 .formulario__mensaje-exito{
@@ -74,10 +75,13 @@ body{
 }
 
 .form-select{
-    background-color: #FFF4E2;
-    border-color: blue;
+    background-color: #F4F9FF;
+    border-color: #42457A;
     width: 340px;
     height: 44px;
+}
+.rgd{
+    font-size: 10px;
 }
 
 /* estilos para la validación */
@@ -115,8 +119,8 @@ body{
         margin-right: 10mm;
     }
     .form-select{
-        background-color: #FFF4E2;
-        border-color: blue;
+        background-color: #F4F9FF;
+        border-color: #42457A;
         width: 690px;
         height: 44px;
         
@@ -127,6 +131,9 @@ body{
     .form__checkbox{
         margin-top: 5mm;
         margin-left: 5mm;
+    }
+    .rgd{
+        font-size: 12px;
     }
 }
 @media screen and (min-width:1300px){
@@ -141,5 +148,11 @@ body{
         width: 1210px;
         height: 44px;
         
+    }
+    .formulario__btn{
+        margin-left: 550px;
+    }
+    .rgd{
+        font-size: 12px;
     }
 }

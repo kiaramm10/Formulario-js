@@ -1,5 +1,5 @@
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
+//const Formulario = document.getElementById('formulario');
+const Inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -74,7 +74,7 @@ const validarCampo = (expresion, input, campo) => {
 
 
 
-inputs.forEach((input) => {
+Inputs.forEach((input) => {
     input.addEventListener('keyup',validarFormulario);
     input.addEventListener('blur',validarFormulario);
 });
